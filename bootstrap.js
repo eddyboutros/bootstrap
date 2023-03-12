@@ -8,7 +8,7 @@ function loadCountries(element)
         }
     }
 
-    let nbCountriesPerRow = event instanceof PointerEvent ? element.target.innerHTML : element.innerHTML;
+    let nbCountriesPerRow = element instanceof PointerEvent ? element.target.innerHTML : element.innerHTML;
     const remainder = 12 % nbCountriesPerRow;
 
     if (remainder !== 0) {

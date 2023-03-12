@@ -36,7 +36,8 @@ function loadCountries(element)
             console.log(json);
             json.forEach(element => {
                 var card = document.createElement("div")
-                card.setAttribute("class", "card col-" + bootstrapClassNb + " rounded shadow-sm");
+                card.setAttribute("class", "card col-" + bootstrapClassNb +
+                        " col-sm-" + bootstrapClassNb + " col-md-" + bootstrapClassNb + " col-lg-" + bootstrapClassNb + " rounded");
 
                 var countryImg = document.createElement("img");
                 countryImg.src = element.flags.png;
